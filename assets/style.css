@@ -218,7 +218,8 @@ section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked)
 }
 
 /* ---------- Buttons ---------- */
-.stButton > button {
+.stButton > button,
+div[data-testid="stDownloadButton"] > button {
   background: linear-gradient(135deg, var(--accent) 0%, #00B89C 100%);
   color: #06110E;
   font-weight: 600;
@@ -228,11 +229,11 @@ section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked)
   transition: filter 0.18s ease, transform 0.12s ease;
 }
 
-.stButton > button:hover {
+.stButton > button:hover,
+div[data-testid="stDownloadButton"] > button:hover {
   filter: brightness(1.08);
   transform: translateY(-1px);
 }
-
 .stButton > button:focus-visible {
   outline: 2px solid var(--accent-alt);
   outline-offset: 2px;
